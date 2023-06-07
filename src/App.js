@@ -1,20 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Irriga from './Irriga.js';
-<Route path="/destinations" component={Irriga} />
-
-
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
       <div>
         <Route exact path="/" component={MainScreen} />
-        <Route path="/destinations" component={Irriga} />
+        <Route path="/destinations" component={MainScreen} />
         {/* Adicione outras rotas aqui, se necessário */}
       </div>
     </Router>
-  );
+  )
 }
 
 function MainScreen() {
@@ -30,7 +26,7 @@ function MainScreen() {
               <a href="/destinations">Irriga</a>
             </li>
             <li>
-              <a href="/about">Dados Agricola</a>
+              <a href="/about">Dados Agrícola</a>
             </li>
             <li>
               <a href="/contact">Monitoramento de pragas</a>
@@ -50,59 +46,68 @@ function MainScreen() {
         </section>
 
         <section className="features">
-          <div>
-            <h2>Irrigação Inteligente com Monitoramento em Tempo Real</h2>
-            <p>
-              Desenvolva um sistema de irrigação inteligente alimentado por IA
-              para analisar dados em tempo real, como umidade do solo, condições
-              climáticas e necessidades específicas das culturas. Essas
-              informações são integradas a partir de sensores agrícolas e
-              dispositivos conectados, permitindo ajustes automáticos e
-              eficientes na irrigação.
-            </p>
+          
+          <div className="additional-content-item">
+            <img className="abelha" src="abelha.png" alt="Imagem 1" />
+            <h3>Polinização Autônoma</h3>
           </div>
           <div>
-            <h2>Integração de Dados Agrícolas e Tomada de Decisão</h2>
+            <h2 className='texto'>Polinização Autônoma</h2>
             <p>
-              A IA generativa é capaz de integrar dados agrícolas provenientes
-              de diversas fontes, como sensores agrícolas e máquinas conectadas,
-              em um único sistema. Essa integração em tempo real fornece aos
-              agricultores informações valiosas sobre o desempenho das culturas,
-              condições do solo, uso de recursos e outros aspectos importantes
-              da produção agrícola, permitindo tomar decisões informadas e
-              otimizar processos.
-            </p>
-          </div>
-          <div>
-            <h2>Monitoramento de Pragas e Doenças com Imagens Aéreas</h2>
-            <p>
-              Utilize drones equipados com câmeras de alta resolução para
-              capturar imagens aéreas das plantações. A IA generativa analisará
-              essas imagens, identificando padrões e sinais de pragas e doenças.
-              Com isso, os agricultores poderão agir rapidamente para mitigar os
-              problemas, minimizando os danos às plantações e reduzindo a
-              necessidade de pesticidas.
+            A polinização autônoma por IA generativa é um conceito inovador que propõe a utilização de algoritmos de inteligência artificial generativa para realizar a polinização de plantas de forma autônoma, sem a necessidade da intervenção humana ou da presença de polinizadores naturais, como abelhas ou pássaros.
+
+Essa abordagem envolveria a criação de agentes virtuais, baseados em IA, capazes de simular o comportamento de polinizadores naturais. Esses agentes seriam programados para reconhecer flores e realizar uma transferência de pólen entre elas, de maneira semelhante ao que ocorre na polinização tradicional.
+
+A IA generativa cumpriria um papel fundamental nesse processo, pois permitiria que os agentes virtuais aprendessem e evoluíssem sua habilidade de polinização ao longo do tempo. Por meio de algoritmos de aprendizado de máquina, esses agentes eram treinados em diferentes cenários e condições, aprimorando sua eficiência e adaptabilidade.
+
+Essa abordagem poderia ser especialmente útil em situações em que a disponibilidade de polinizadores naturais é limitada, como em áreas urbanas densamente povoadas ou em regiões protegidas por desequilíbrios ecológicos. No entanto, é importante destacar que a polinização autônoma por IA generativa ainda é um conceito teórico e requer mais pesquisa e desenvolvimento antes de se tornar uma realidade prática.
             </p>
           </div>
         </section>
 
         <section className="additional-content">
           <div className="additional-content-item">
-            <img src="url_da_imagem_1" alt="Imagem 1" />
-            <h3>Título da Imagem 1</h3>
-            <p>Descrição da Imagem 1</p>
+            <img src="logo512.png" alt="Imagem 2" />
+            <h3>Drones</h3>
           </div>
-          <div className="additional-content-item">
-            <img src="url_da_imagem_2" alt="Imagem 2" />
-            <h3>Título da Imagem 2</h3>
-            <p>Descrição da Imagem 2</p>
-          </div>
-          <div className="additional-content-item">
-            <img src="url_da_imagem_3" alt="Imagem 3" />
-            <h3>Título da Imagem 3</h3>
-            <p>Descrição da Imagem 3</p>
+          <div>
+            <h2>Drones Automatizados</h2>
+            <p>
+            Drones: 
+
+O uso de drones equipados com câmeras e sensores avançados tem se mostrado uma solução eficiente para o monitoramento de saúde das plantas na agricultura. Através da captura de imagens de alta resolução, esses drones permitem uma análise detalhada das plantações. A IA generativa entra em cena ao analisar essas imagens em tempo real, detectando sinais de estresse ou doenças nas plantas. Isso possibilita uma resposta rápida e direcionada por parte dos agricultores.
+
+Além disso, os algoritmos de IA generativa podem ser treinados para identificar pragas e doenças nas plantas com base em imagens ou dados coletados por sensores. Essa detecção precoce facilita o controle mais eficaz desses problemas, reduzindo as perdas nas colheitas.
+
+Outra aplicação relevante é o monitoramento da qualidade do solo em tempo real. Através de sensores inteligentes e algoritmos de IA generativa, é possível obter informações contínuas sobre nutrientes, pH, umidade e outros parâmetros importantes do solo. Com base nesses dados, os agricultores podem ajustar as práticas de manejo do solo de forma mais precisa, maximizando a produtividade e minimizando os impactos ambientais.
+
+Em resumo, o uso de drones equipados com sensores e câmeras, combinado com a análise em tempo real por meio da IA generativa, oferece um monitoramento avançado da saúde das plantas, detecção de pragas e doenças, além do controle mais eficaz, resultando em uma agricultura mais sustentável e produtiva.
+            </p>
           </div>
         </section>
+
+        <section className="additional-content">
+          <div className="additional-content-item">
+            <img src="rede.png" alt="Imagem 3" />
+            <h3>Redes Sociais</h3>
+          </div>
+          <div>
+            <h2>Agricultura Colaborativa</h2>
+            <p>
+            A agricultura colaborativa é um conceito inovador que busca promover a troca de conhecimento, experiências e recursos entre agricultores, por meio de uma plataforma online paga.
+
+Essa abordagem permite que os agricultores se conectem virtualmente e compartilhem informações valiosas sobre técnicas agrícolas, manejo de culturas, práticas de sustentabilidade, entre outros temas relevantes. A rede social paga oferece um ambiente seguro e exclusivo, no qual os agricultores podem interagir de maneira mais profunda e direcionada.
+
+Ao se tornarem membros pagantes dessa rede social, os agricultores têm acesso a recursos adicionais, como webinars exclusivos, guias técnicos especializados e análises de dados agrícolas. Além disso, a plataforma permite a criação de grupos de interesse específicos, nos quais os agricultores podem discutir desafios comuns, compartilhar soluções e até mesmo colaborar em projetos conjuntos.
+
+A agricultura colaborativa tem o potencial de melhorar significativamente a eficiência e a sustentabilidade da agricultura, ao promover o compartilhamento de conhecimento e recursos entre os agricultores. Essa abordagem fortalece a comunidade agrícola e facilita a adoção de práticas inovadoras, resultando em melhores resultados econômicos e ambientais.
+
+No entanto, é importante ressaltar que a adesão a essa rede social paga requer investimento financeiro por parte dos agricultores. Portanto, a viabilidade e aceitação dessa abordagem dependerão da percepção de valor e dos benefícios tangíveis que os agricultores obtêm ao se juntarem a essa comunidade colaborativa.
+            </p>
+          </div>
+        </section>
+
+
       </main>
 
       <footer>
@@ -126,7 +131,7 @@ function MainScreen() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
 
-export default MainScreen;
+export default MainScreen
