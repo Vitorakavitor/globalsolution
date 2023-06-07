@@ -51,7 +51,7 @@ function MainScreen() {
             <img className="abelha" src="abelha.png" alt="Imagem 1" />
             <h3>Polinização Autônoma</h3>
           </div>
-          <div>
+          <div className='caixa'>
             <h2 className='texto'>Polinização Autônoma</h2>
             <p>
             A polinização autônoma por IA generativa é um conceito inovador que propõe a utilização de algoritmos de inteligência artificial generativa para realizar a polinização de plantas de forma autônoma, sem a necessidade da intervenção humana ou da presença de polinizadores naturais, como abelhas ou pássaros.
